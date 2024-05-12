@@ -1,0 +1,47 @@
+
+<div id="service">
+    <app-carousel></app-carousel>
+    <div class="container-main mt-3">
+        <div class="section-top md:flex items-center">
+            <div class="filter mb-2 w-full md:w-3/12 lg:w-3/12  xl:w-2/12">
+                <div class="container-filter">
+                    <p-multiSelect  [options]="cities" [(ngModel)]="selectedCities" optionLabel="name" placeholder="Phòng ban"></p-multiSelect>
+                </div>
+            </div>
+            <div class="search w-full mb-2 md:w-9/12  xl:w-10/12">
+                <div class="container-search md:ml-2 w-full flex items-center">
+                    <div class="icon-search">
+                        <i class='bx bx-search-alt-2 text-2xl'></i>
+                    </div>
+                    <input class="outline-none ml-1" type="text" placeholder="Bạn tìm gì...">
+                </div>
+            </div>
+        </div>
+
+        <div class="section-bottom">
+            <p-table class="custom-table-service" [value]="services" [tableStyle]="{'min-width': '30rem'}">
+                <ng-template pTemplate="header">
+                  <tr>
+                    <th style="width:5%">STT</th>
+                    <th pSortableColumn="name" style="width:40%"><span>Tên dịch vụ <p-sortIcon class="inline-block" field="name"></p-sortIcon></span></th>
+                    <th style="width:5%">Hỗ trợ </th>
+                    <th style="width:30%">Đơn vị thực hiện </th>
+                    <th style="width:20%">Thời gian xử lý </th>
+                  </tr>
+                </ng-template>
+                <ng-template pTemplate="body" let-service let-rowIndex="rowIndex">
+                  <tr (click)="handleForwardDetail(service.id)" class="table-row item-service">
+                    
+                        <td>{{rowIndex + 1}}</td>
+                        <td>{{service.name}}</td>
+                        <td>{{service.type}}</td>
+                        <td>{{service.department.name}}</td>
+                        <td>{{service.time_handle}}</td>
+                   
+                  </tr>
+                </ng-template>
+              </p-table>
+              
+        </div>
+    </div>
+</div>

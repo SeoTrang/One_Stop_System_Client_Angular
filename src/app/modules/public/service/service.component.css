@@ -1,0 +1,48 @@
+#service .filter .container-filter{
+    border: 2px solid #f1f3f4;
+    border-radius: 5px;
+    width: 100%;
+
+}
+
+@media screen and (min-width: 768px) {
+    #service .filter .container-filter{}
+}
+
+/*
+height: auto;
+    min-height: 1.4375em;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+*/
+#service .search .container-search{
+    border: 2px solid #f1f3f4;
+    border-radius: 5px;
+    padding: 5px 15px 5px 15px;
+    min-height: 48px;
+}
+#service .search .container-search:focus-within{
+    border: 2px solid;
+}
+
+#service .search .container-search input{
+    
+    width: 100%;
+}
+
+#service .search .container-search .icon-search{
+    color: var(--blur-color-sm);
+    transition: 0.1s;
+}
+
+#service .search .container-search .icon-search:hover{
+    color: var(--main-color);
+    cursor: pointer;
+}
+
+#service .item-service:hover{
+    transition: 0.3s;
+    background-color: aliceblue;
+    cursor: pointer;
+}

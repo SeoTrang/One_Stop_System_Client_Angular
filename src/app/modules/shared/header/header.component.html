@@ -1,0 +1,132 @@
+<div id="header">
+    <!-- <button nz-button nzType="primary">Primary</button> -->
+    <!-- <button nz-button nzType="primary">Primary Button</button> -->
+    
+    <div class="lg-header hidden md:block">
+        <div class="header-top  container-main mt-3 mb-3 flex items-center justify-between">
+            <div class="section-left">
+                <div class="flex items-center">
+                    <div class="logo">
+                        <img src="https://ictu.edu.vn/wp-content/uploads/2022/12/logo-co-vien-chu-JPG-scaled.jpg" alt="">
+                    </div>
+                    <div class="name-school ml-3">
+                        <h1 class="text-top text-md">
+                            ĐẠI HỌC THÁI NGUYÊN
+                        </h1>
+                        <h2 class="text-bottom text-md">
+                            TRƯỜNG ĐẠI HỌC KINH TẾ VÀ QUẢN TRỊ KINH DOANH
+                        </h2>
+                    </div>
+                </div>
+            </div>
+            <div class="section-right">
+                <div class="flex items-center">
+                    <div class="list-icon flex">
+                        <div class="facebook mr-2 cursor-pointer">
+                            <i class=' bx bxl-facebook-circle text-2xl'></i>
+                        </div>
+                        <div class="email mr-2 cursor-pointer">
+                            <i class=' bx bx-envelope text-2xl'></i>
+                        </div>
+                        <div class="youtube mr-2 cursor-pointer">
+                            <i class=' bx bxl-youtube text-2xl text-red-600' ></i>
+                        </div>
+                    </div>
+                    <div class="user">
+                        <div *ngIf="user">
+                            <admin-user-info></admin-user-info>
+                        </div>
+                        <div *ngIf="!user">
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="header-bottom">
+            <div class="list-nav container-main pt-3 pb-3">
+                <ul class="flex">
+                    <li>
+                        <a routerLink="/">GIỚI THIỆU</a>
+                    </li>
+                    <li>
+                        <a routerLink="/service">DỊCH VỤ</a>
+                    </li>
+                    <li>
+                        <a routerLink="/support">HỖ TRỢ</a>
+                    </li>
+                    <li>
+                        <a [routerLink]="">CỘNG ĐỒNG</a>
+                    </li>
+                    <li>
+                        <a [routerLink]="">HỎI ĐÁP</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="sm-header  block md:hidden">
+        <div class="container-main mt-3 flex items-center justify-between">
+            <div class="section-left flex items-center">
+                <div class="logo">
+                    <img src="https://ictu.edu.vn/wp-content/uploads/2022/12/logo-co-vien-chu-JPG-scaled.jpg" alt="">
+                </div>
+                <div class="school-name ml-3">
+                    HỆ THỐNG MỘT CỬA
+                </div>
+            </div>
+            <div class="section-right">
+                <div class="flex items-center">
+                    <div class="user">
+                        <div *ngIf="user">
+                            <admin-user-info></admin-user-info>
+                        </div>
+                        <div *ngIf="!user">
+                            
+                        </div>
+                    </div>
+                    <div class="togge-menu ml-1" (click)="open()">
+                        <i class='bx bx-menu text-2xl'></i>
+        
+            
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <nz-drawer
+      [nzClosable]="true"
+      [nzVisible]="visible"
+      nzPlacement="left"
+      (nzOnClose)="close()"
+      nzWrapClassName="drawer-menu-nav-header"
+      
+    >
+      <ng-container *nzDrawerContent>
+        <ul>
+            <li>
+                <i class='bx bx-home-alt-2'></i>
+                <a (click)="close()" routerLink="/">GIỚI THIỆU</a>
+            </li>
+            <li>
+                <i class='bx bx-cog'></i>
+                <a (click)="close()" routerLink="/service">DỊCH VỤ</a>
+            </li>
+            <li>
+                <i class='bx bx-help-circle'></i>
+                <a (click)="close()"  routerLink="/support">HỖ TRỢ</a>
+            </li>
+            <li>
+                <i class='bx bx-group'></i>
+                <a (click)="close()" [routerLink]="">CỘNG ĐỒNG</a>
+            </li>
+            <li>
+                <i class='bx bx-question-mark'></i>
+                <a (click)="close()" [routerLink]="">HỎI ĐÁP</a>
+            </li>
+        </ul>
+      </ng-container>
+    </nz-drawer>
+</div>

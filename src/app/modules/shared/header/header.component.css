@@ -1,0 +1,67 @@
+
+
+#header .logo{
+    width: 70px;
+    height: 70px;
+}
+
+#header {
+    color: var(--main-color);
+}
+
+#header .name-school{
+    font-weight: 600;
+    color: var(--main-color);
+    font-size: 1.1rem;
+}
+
+#header .lg-header .text-top{
+    font-weight: 400;
+    color: var(--main-color);
+    
+}
+
+#header .lg-header .text-bottom{
+    font-weight: 600;
+    color: var(--main-color);
+}
+
+#header .header-bottom{
+    background-color: var(--main-color);
+    color: #ffffff;
+}
+
+#header .header-bottom li{
+    font-size: 1rem;
+    margin-right: 15px;
+    transition: 0.15s;
+    cursor: pointer;
+}
+#header .header-bottom li:hover{
+    color: var(--main-color-hover);
+}
+
+#header .sm-header .logo{
+    width: 40px;
+    height: 40px;
+}
+
+#header .sm-header li{
+    margin-bottom: 16px;
+}
+
+
+#header .togge-menu {
+    padding: 0;
+    /* color: #ffffff !important; */
+    border: 1px solid var(--main-color);
+    border-radius: 999px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 32px;
+    height: 32px;
+    outline: none !important;
+    box-shadow: none !important;
+}

@@ -1,0 +1,34 @@
+.buton-back{
+    height: 100%;
+    background-color: var(--main-color);
+    color: #ffffff;
+    padding: 5px 14px;
+    border-radius: 18px;
+}
+
+
+#create-document .section-top{
+    min-height: 30px;
+}
+
+#create-document .service-name{
+    color: var(--main-color);
+    font-weight: 500;
+    font-size: 1rem;
+}
+
+#create-document .lable-input{
+    color: #0000008a;
+    font-weight: 500;
+}
+
+
+#create-document .btn-submit{
+    background-color: var(--main-color);
+    color: #ffffff;
+    margin-top: 15px;
+    padding: 10px 15px;
+    min-width: 300px;
+    border-radius: 30px;
+}
+

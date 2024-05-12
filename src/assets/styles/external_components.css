@@ -1,0 +1,259 @@
+
+.drawer-menu-nav-header{
+    max-width: 260px !important;
+}
+.drawer-menu-nav-header li{
+    margin-bottom: 10px !important;
+}
+
+.drawer-menu-nav-header li:hover{
+    color: var(--main-color-hover);
+}
+
+.custom-table-home div{
+    font-size: 0.875rem;
+}
+
+.drawer-menu-nav-header .ant-drawer-wrapper-body{
+    position: relative;
+}
+
+.drawer-menu-nav-header .ant-drawer-header{
+    position: absolute;
+    background-color: transparent;
+    right: 0px;
+    padding: 0px 0px 15px 15px;
+}
+
+.drawer-menu-nav-header .ant-drawer-header:hover .ant-drawer-header-title svg{
+    color: #FF3D00;
+}
+
+
+.drawer-menu-nav-header a {
+    margin-left: 5px;
+}
+
+
+
+/* service page */
+
+#service .p-multiselect{
+    width: 100%;
+}
+
+@media screen and (min-width:768px) {
+    #service .p-multiselect-label-container{
+        max-width: 110px;
+    }
+    
+
+}
+
+@media screen and (min-width: 1024px) {
+    #service .p-multiselect-label-container{
+        max-width: 180px;
+    }
+    
+
+}
+
+@media screen and (min-width:1280px ) {
+    #service .p-multiselect-label-container{
+        max-width: 120px;
+    }
+    
+
+}
+
+.custom-table-service div{
+    font-size: 0.875rem;
+}
+
+.custom-table-service .table-row{
+    border-bottom: 1px solid var(--border-color-blur);
+}
+
+
+/* create document */
+#create-document .tab-create-document .p-highlight{
+    color: var(--main-color);
+}
+
+#create-document .tab-create-document .p-tabview-ink-bar{
+    z-index: 1;
+    display: block;
+    position: absolute;
+    bottom: 0;
+    height: 1px;
+    background-color: #3B82F6;
+    transition: 250ms cubic-bezier(0.35, 0, 0.25, 1);
+}
+
+#create-document .tab-create-document .p-tabview-nav .p-tabview-title{
+    font-weight: 500 !important;
+}
+
+#create-document .tab-create-document .p-tabview-panel{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.initial{
+    all: unset !important;
+}
+
+/* .my-element *,
+.my-element *::before,
+.my-element *::after {
+    all: unset !important;
+} */
+
+
+
+.not-tailwind-Preflight blockquote,
+.not-tailwind-Preflight  dl,
+.not-tailwind-Preflight  dd,
+.not-tailwind-Preflight  h1,
+.not-tailwind-Preflight  h2,
+.not-tailwind-Preflight  h3,
+.not-tailwind-Preflight  h4,
+.not-tailwind-Preflight  h5,
+.not-tailwind-Preflight  h6,
+.not-tailwind-Preflight  hr,
+.not-tailwind-Preflight  figure,
+.not-tailwind-Preflight  p,
+.not-tailwind-Preflight  pre {
+  margin: auto;
+}
+
+.not-tailwind-Preflight h1,
+.not-tailwind-Preflight h2,
+.not-tailwind-Preflight h3,
+.not-tailwind-Preflight h4,
+.not-tailwind-Preflight h5,
+.not-tailwind-Preflight h6 {
+    font-size: 1.25em !important; /* Sử dụng 1.25em hoặc giá trị khác phù hợp */
+    font-weight: unset !important;
+}
+
+
+.not-tailwind html {
+    line-height: 1.5;
+    -webkit-text-size-adjust: 100%;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+.not-tailwind {
+    margin: 0;
+    /* font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji'; */
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif !important;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5 !important;
+    color: #333333;
+    text-align: left;
+    background-color: #fff;
+}
+
+
+/* Ghi đè lên kiểu dáng của các thẻ heading */
+.not-tailwind h1,
+.not-tailwind h2,
+.not-tailwind h3,
+.not-tailwind h4,
+.not-tailwind h5,
+.not-tailwind h6 {
+    font-size: revert !important;
+    font-weight: revert !important;
+    margin-top: revert !important;
+    color: revert !important;
+}
+
+
+
+/* ------------------p toast ------------------------------- */
+
+.p-toast .p-toast-message {
+	border-radius: 0;
+}
+
+/***********************************
+* ovic-toast                       *
+***********************************/
+.p-toast .p-toast-message .p-toast-icon-close {
+	width: 32px;
+	height: 32px;
+	display: flex;
+	justify-content: center;
+	align-content: center;
+	outline: none !important;
+	box-shadow: none !important;
+}
+
+.p-toast .p-toast-message .p-toast-icon-close > .p-toast-icon-close-icon.pi {
+	font-size: 16px;
+}
+
+.p-toast .p-toast-message.p-toast-message-info .p-toast-message-icon {
+	font-size: 28px;
+	padding: 0;
+}
+
+.p-toast .p-toast-message .p-toast-message-content .p-toast-summary {
+	font-size: 15px;
+}
+
+.p-toast .p-toast-message .p-toast-message-content .p-toast-message-text {
+	margin: 0 0 0 10px;
+	max-width: calc(100% - 38px - 32px);
+}
+
+.p-toast .p-toast-message .p-toast-message-content {
+	padding: 15px;
+}
+
+.p-toast .p-toast-message .p-toast-message-content .p-toast-detail {
+	margin: 5px 0 0;
+	font-size: 15px;
+	line-height: 20px;
+}
+
+@media ( max-width: 767px) {
+	.p-toast {
+		max-width: calc(100% - 30px);
+	}
+	
+	.p-toast-bottom-right {
+		right: 15px !important;
+	}
+}
+
+
+
+/* -------------------confirm dialog---------------------- */
+.confirm-dialog .p-confirm-dialog{
+    min-width: 300px !important;
+}
+
+@media screen and (min-width: 1024px) {
+    .confirm-dialog .p-confirm-dialog{
+        min-width: 500px !important;
+    }
+}
+.confirm-dialog .p-confirm-dialog-message{
+    color: #FF3D00 !important;
+}
+
+.confirm-dialog .p-button-danger{
+    margin-left: 15px;
+    background-color: #FF3D00;
+    color: #ffffff;
+    padding: 5px 15px;
+}
+
+.confirm-dialog .p-button-success{
+    margin-left: 15px;
+    background-color: #22C55E;
+    color: #ffffff;
+    padding: 5px 15px;
+}
