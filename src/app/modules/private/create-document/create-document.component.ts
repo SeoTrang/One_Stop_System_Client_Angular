@@ -289,7 +289,7 @@ export class CreateDocumentComponent implements OnInit {
     // console.log(dataConverted.length);
     // console.log(dataConverted);
     
-    if(dataConverted.length <= 1){
+    if(dataConverted.length < 1){
       
       return this.notificationService.toastError('Vui lòng nhập đầy đủ thông tin!','Thông báo ⚠️');
     }
@@ -306,6 +306,8 @@ export class CreateDocumentComponent implements OnInit {
             console.log(data);
             setTimeout(() => {
                 this.loadingService.hideLoading();
+                this.notificationService.toastSuccess("Đăng ký thành công!","Thông báo")
+                window.location.href = '/'
             }, 3000);
         },
         error: (err) => {
